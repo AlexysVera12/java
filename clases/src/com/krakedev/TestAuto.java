@@ -12,13 +12,13 @@ public class TestAuto {
 		auto2.anio = 2015;
 		auto2.precio = 15000.00;
 		System.out.println("----------Auto 1----------");
-		System.out.println("Marca: "+auto1.marca);
-		System.out.println("Año: "+auto1.anio);
-		System.out.println("precio: "+auto1.precio);
+		System.out.println("Marca: " + auto1.marca);
+		System.out.println("Año: " + auto1.anio);
+		System.out.println("precio: " + auto1.precio);
 		System.out.println("----------Auto 2----------");
-		System.out.println("Marca: "+auto2.marca);
-		System.out.println("Año: "+auto2.anio);
-		System.out.println("Precio: "+auto2.precio);
+		System.out.println("Marca: " + auto2.marca);
+		System.out.println("Año: " + auto2.anio);
+		System.out.println("Precio: " + auto2.precio);
 	}
 
 }
