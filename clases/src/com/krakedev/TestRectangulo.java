@@ -9,10 +9,10 @@ public class TestRectangulo {
 		int areaR2;
 		double perimetroR1;
 		double perimetroR2;
-		r1.base = 5;
-		r1.altura = 10;
-		r2.base = 8;
-		r2.altura = 3;
+		r1.setBase(5);
+		r1.setAltura(10);
+		r2.setBase(8);
+		r2.setAltura(3);
 		areaR1 = r1.calcularArea();
 		areaR2 = r2.calcularArea();
 		perimetroR1 = r1.calcularPerimetro();
