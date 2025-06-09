@@ -20,6 +20,7 @@ public class TestCalculadora {
 		System.out.println("Resultado mutiplicacion: "+productoMultiplicacion);
 		System.out.println("Resultado division: "+cocienteDivision);
 		System.out.println("Resultado promedio: "+resultadoPromedio);
+		calcu.mostrarResultado();
 	}
 
 }
