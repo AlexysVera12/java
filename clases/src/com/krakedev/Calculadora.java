@@ -16,4 +16,9 @@ public class Calculadora {
 		producto = valor1 * valor2;
 		return producto;
 	}
+	public double dividir(double valor1,double valor2) {
+		double cociente;
+		cociente = valor1 / valor2;
+		return cociente;
+	}
 }
