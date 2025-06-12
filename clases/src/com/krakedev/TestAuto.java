@@ -3,14 +3,14 @@ package com.krakedev;
 public class TestAuto {
 
 	public static void main(String[] args) {
-		Auto auto1 = new Auto();
-		Auto auto2 = new Auto();
-		auto1.setMarca("Dodge");
+		Auto auto1 = new Auto("Dodge",2010,20000.00);
+		Auto auto2 = new Auto("Mitsubishi",2015,15000.00);
+		/*auto1.setMarca("Dodge");
 		auto1.setAnio(2010);
 		auto1.setPrecio(20000.00);
 		auto2.setMarca("Mitsubishi");
 		auto2.setAnio(2015);
-		auto2.setPrecio(15000.00);
+		auto2.setPrecio(15000.00);*/
 		System.out.println("----------Auto 1----------");
 		System.out.println("Marca: " + auto1.getMarca());
 		System.out.println("Año: " + auto1.getAnio());

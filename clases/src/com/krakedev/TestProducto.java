@@ -3,21 +3,21 @@ package com.krakedev;
 public class TestProducto {
 
 	public static void main(String[] args) {
-		Producto productoA = new Producto();
-		productoA.setNombre("Cafetera Italiana");
+		Producto productoA = new Producto("Casco Integral",180);
+		/*productoA.setNombre("Cafetera Italiana");
 		productoA.setDescripcion("Cafetera de aluminio para preparar café espresso al estilo tradicional italiano. Apta para cocinas a gas y eléctricas");
 		productoA.setPrecio(24.90);
-		productoA.setStockActual(33);
-		Producto productoB = new Producto();
-		productoB.setNombre("Set de Pintura Acrílica");
+		productoA.setStockActual(33);*/
+		Producto productoB = new Producto("Guantes Alpinestars",90);
+		/*productoB.setNombre("Set de Pintura Acrílica");
 		productoB.setDescripcion("Kit artístico con 24 tubos de pintura acrílica, 6 pinceles y paleta de mezcla. Ideal para principiantes y artistas");
 		productoB.setPrecio(17.25);
-		productoB.setStockActual(60);
-		Producto productoC = new Producto();
-		productoC.setNombre("Colchón Inflable");
+		productoB.setStockActual(60);*/
+		Producto productoC = new Producto("Llantas Michelin",300);
+		/*productoC.setNombre("Colchón Inflable");
 		productoC.setDescripcion("Colchón inflable tamaño matrimonial con superficie flocada y bomba integrada para inflado/desinflado rápido");
 		productoC.setPrecio(49.95);
-		productoC.setStockActual(22);
+		productoC.setStockActual(22);*/
 		System.out.println("--------Producto A--------");
 		System.out.println("Nombre: " + productoA.getNombre());
 		System.out.println("Descripcion: " + productoA.getDescripcion());
