@@ -41,5 +41,10 @@ public class Cuentas {
 	public void setSaldo(BigDecimal saldo) {
 		this.saldo = saldo;
 	}
+	@Override
+	public String toString() {
+		return "Cuentas [numeroCuenta=" + numeroCuenta + ", cedulaPropietario=" + cedulaPropietario + ", fechaCreacion="
+				+ fechaCreacion + ", saldo=" + saldo + "]";
+	}
 	
 }

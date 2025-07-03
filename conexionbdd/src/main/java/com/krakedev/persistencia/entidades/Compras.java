@@ -41,5 +41,10 @@ public class Compras {
 	public void setMonto(BigDecimal monto) {
 		this.monto = monto;
 	}
+	@Override
+	public String toString() {
+		return "Compras [idCompra=" + idCompra + ", cedula=" + cedula + ", FechaCompra=" + FechaCompra + ", monto="
+				+ monto + "]";
+	}
 	
 }

@@ -1,8 +1,11 @@
 package com.krakedev.persistencia.servicio;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -87,5 +90,31 @@ public class AdminCompras {
 			}
 			
 		}
+	}
+	public static Compras buscarPorPK(int id_compra) {
+		Compras compra = new Compras();
+		Connection con = null;
+		PreparedStatement ps;
+		ResultSet rs = null;
+		try {
+			con = conexionBDD.conectar();
+			ps = con.prepareStatement("Select * from compras where id_compra = ?");
+			ps.setInt(1, id_compra);
+			rs = ps.executeQuery();
+			if (rs.next()) {
+				int idCompra = rs.getInt("id_compra");
+				String cedula = rs.getString("cedula");
+				Date fechaCompra = rs.getDate("fecha_compra");
+				BigDecimal monto = rs.getBigDecimal("monto");
+				compra.setIdCompra(idCompra);
+				compra.setCedula(cedula);
+				compra.setFechaCompra(fechaCompra);
+				compra.setMonto(monto);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return compra;
 	}
 }
